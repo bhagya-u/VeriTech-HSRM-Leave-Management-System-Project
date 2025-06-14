@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - HRMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" style="justify-content: center; align-items: center; display: flex; height: 100vh;">
+    <main class="main-content" style="max-width: 400px; width: 100%;">
+      <h1 style="text-align:center;">Login</h1>
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Login</button>
+        <p style="margin-top: 15px; font-size: 14px;">Use <strong>employee</strong> or <strong>manager</strong> as username. Password is <strong>123</strong>.</p>
+      </form>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

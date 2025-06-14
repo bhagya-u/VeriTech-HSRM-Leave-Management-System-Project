@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Dashboard - HRMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>HRMS</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="applyLeave.html">Apply Leave</a></li>
+          <li><a href="leaveHistory.html">Leave History</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>Welcome to the Dashboard</h1>
+      <div class="card-container" id="dashboardCounts">
+        <div class="card">
+          <p>Total Leaves</p>
+          <h3 id="totalLeaves">12</h3>
+        </div>
+        <div class="card">
+          <p>Pending Leaves</p>
+          <h3 id="pendingLeaves">3</h3>
+        </div>
+        <div class="card">
+          <p>Approved Leaves</p>
+          <h3 id="approvedLeaves">7</h3>
+        </div>
+      </div>
+
+      <section class="leave-table">
+        <h2>Leave Requests</h2>
+        <table id="dashboardTable">
+          <thead>
+            <tr>
+              <th>Employee</th>
+              <th>Leave Type</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows populated by script.js -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
